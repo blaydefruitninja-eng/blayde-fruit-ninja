@@ -96,12 +96,13 @@ function Hero() {
             <div className="absolute -bottom-3 left-8 h-5 w-5 rotate-45 border-b-[3px] border-r-[3px] border-ninja-ink bg-white" />
           </div>
           <img
-            src={blayde}
-            alt="Blayde the Fruit Ninja holding a fruit spear"
+            src={logo}
+            alt="Blayde the Fruit Ninja logo"
             width={1024}
-            height={1280}
-            className="relative w-[75%] max-w-md animate-bounce-y drop-shadow-[10px_10px_0_var(--ninja-ink)] md:w-full"
+            height={1024}
+            className="relative w-[90%] max-w-lg animate-bounce-y drop-shadow-[8px_8px_0_var(--ninja-ink)] md:w-full"
           />
+
         </div>
       </div>
 
