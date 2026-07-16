@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import blaydeAsset from "@/assets/blayde-avatar.png.asset.json";
+import blaydeActionAsset from "@/assets/blayde-action.png.asset.json";
 import logoAsset from "@/assets/blayde-logo.png.asset.json";
-const blayde = blaydeAsset.url;
+const blaydeAction = blaydeActionAsset.url;
 const logo = logoAsset.url;
 import desert from "@/assets/desert-bg.jpg";
 
