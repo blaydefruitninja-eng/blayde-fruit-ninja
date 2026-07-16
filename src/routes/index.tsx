@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import blaydeAsset from "@/assets/blayde-avatar.png.asset.json";
+import blaydeActionAsset from "@/assets/blayde-action.png.asset.json";
 import logoAsset from "@/assets/blayde-logo.png.asset.json";
-const blayde = blaydeAsset.url;
+const blaydeAction = blaydeActionAsset.url;
 const logo = logoAsset.url;
 import desert from "@/assets/desert-bg.jpg";
 
@@ -131,10 +131,10 @@ function AboutBlayde() {
         <div className="relative">
           <div className="rotate-[-3deg] rounded-3xl ninja-border bg-ninja-yellow p-6 shadow-pop-lg">
             <img
-              src={blayde}
-              alt="Blayde cartoon avatar"
+              src={blaydeAction}
+              alt="Blayde the Fruit Ninja in action"
               width={1024}
-              height={1280}
+              height={1024}
               loading="lazy"
               className="mx-auto w-full max-w-xs"
             />
@@ -267,9 +267,9 @@ function LocationBlock() {
 
 function SocialsBlock() {
   const socials = [
-    { name: "TikTok", handle: "@fruitninja", color: "bg-ninja-ink text-ninja-cream", icon: "♪" },
-    { name: "Instagram", handle: "@fruitninja.az", color: "bg-ninja-pink text-white", icon: "◉" },
-    { name: "YouTube", handle: "/fruitninja66", color: "bg-white text-ninja-ink", icon: "▶" },
+    { name: "TikTok", handle: "@blaydethefruitninja", url: "https://tiktok.com/@blaydethefruitninja", color: "bg-ninja-ink text-ninja-cream", icon: "♪" },
+    { name: "Instagram", handle: "@blaydethefruitninja", url: "https://instagram.com/blaydethefruitninja", color: "bg-ninja-pink text-white", icon: "◉" },
+    { name: "YouTube", handle: "@blaydethefruitninja", url: "https://youtube.com/@blaydethefruitninja", color: "bg-white text-ninja-ink", icon: "▶" },
   ];
   return (
     <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
@@ -283,7 +283,9 @@ function SocialsBlock() {
         {socials.map((s) => (
           <a
             key={s.name}
-            href="#"
+            href={s.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`group rounded-3xl ninja-border p-6 shadow-pop hover-pop ${s.color}`}
           >
             <div className="flex items-center gap-4">
