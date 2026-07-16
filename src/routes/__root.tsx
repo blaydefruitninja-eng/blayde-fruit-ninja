@@ -81,13 +81,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Fruit Ninja by Blayde — fresh fruit spears, Kool-Aid punches & coffee-juice Foxies on Route 66.",
+          "Fruit Ninja by Blayde — fresh fruit spears, Kool-Aid punches & coffee-juice Foxies. Slinging flavor on the corner of Winslow, Arizona (Route 66).",
       },
       { name: "author", content: "Blayde" },
+      { property: "og:title", content: "Fruit Ninja — Corner of Winslow, AZ" },
+      { name: "twitter:title", content: "Fruit Ninja — Corner of Winslow, AZ" },
+      { property: "og:description", content: "Fruit Ninja by Blayde — fresh fruit spears, Kool-Aid punches & coffee-juice Foxies. Slinging flavor on the corner of Winslow, Arizona (Route 66)." },
+      { name: "twitter:description", content: "Fruit Ninja by Blayde — fresh fruit spears, Kool-Aid punches & coffee-juice Foxies. Slinging flavor on the corner of Winslow, Arizona (Route 66)." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/8f169a92-7ebf-4d9b-b920-2c24409c0ebf" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/8f169a92-7ebf-4d9b-b920-2c24409c0ebf" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

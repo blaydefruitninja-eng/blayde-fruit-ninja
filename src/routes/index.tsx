@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import blaydeActionAsset from "@/assets/blayde-action.png.asset.json";
+import blaydeAsset from "@/assets/blayde-avatar.png.asset.json";
 import logoAsset from "@/assets/blayde-logo.png.asset.json";
-const blaydeAction = blaydeActionAsset.url;
+const blayde = blaydeAsset.url;
 const logo = logoAsset.url;
 import desert from "@/assets/desert-bg.jpg";
 
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Fruit Ninja — Corner of Winslow, AZ" },
       {
         property: "og:description",
-        content: "Street-food from Blayde the Fruit Ninja on Route 66.",
+        content: "Fruit Ninja by Blayde — fresh fruit spears, Kool-Aid punches & coffee-juice Foxies. Slinging flavor on the corner of Winslow, Arizona (Route 66).",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -131,10 +131,10 @@ function AboutBlayde() {
         <div className="relative">
           <div className="rotate-[-3deg] rounded-3xl ninja-border bg-ninja-yellow p-6 shadow-pop-lg">
             <img
-              src={blaydeAction}
-              alt="Blayde the Fruit Ninja in action"
+              src={blayde}
+              alt="Blayde cartoon avatar"
               width={1024}
-              height={1024}
+              height={1280}
               loading="lazy"
               className="mx-auto w-full max-w-xs"
             />
