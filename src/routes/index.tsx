@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import blayde from "@/assets/blayde-ninja.png";
+import blaydeAsset from "@/assets/blayde-avatar.png.asset.json";
+const blayde = blaydeAsset.url;
 import desert from "@/assets/desert-bg.jpg";
 
 export const Route = createFileRoute("/")({
