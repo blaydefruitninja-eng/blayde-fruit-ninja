@@ -131,10 +131,10 @@ function AboutBlayde() {
         <div className="relative">
           <div className="rotate-[-3deg] rounded-3xl ninja-border bg-ninja-yellow p-6 shadow-pop-lg">
             <img
-              src={blayde}
-              alt="Blayde cartoon avatar"
+              src={blaydeAction}
+              alt="Blayde the Fruit Ninja in action"
               width={1024}
-              height={1280}
+              height={1024}
               loading="lazy"
               className="mx-auto w-full max-w-xs"
             />
